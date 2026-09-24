@@ -10,7 +10,7 @@
 <style>
 /* ═══════════════════════════════════════════════════════════
    DESIGN TOKENS
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 :root {
   --cyan:        #00C2FF;
   --cyan-dim:    #0099CC;
@@ -46,7 +46,7 @@
 
 /* ═══════════════════════════════════════════════════════════
    RESET & BASE
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
@@ -71,7 +71,7 @@ body::before {
 body::after {
   content:'';
   position:fixed; inset:0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.08'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
   pointer-events:none; z-index:999; opacity:0.5;
 }
 
@@ -80,7 +80,7 @@ body::after {
 
 /* ═══════════════════════════════════════════════════════════
    NAV
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 nav {
   position:fixed; top:0; left:0; right:0; z-index:200;
   height:60px;
@@ -119,7 +119,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    HERO
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .hero {
   min-height:100vh; display:flex; align-items:center;
   padding:90px 0 60px; position:relative;
@@ -196,15 +196,8 @@ nav {
 .badge-sep { color:var(--t4); font-size:11px; }
 
 /* ═══════════════════════════════════════════════════════════
-   INFRA CARD
-═══════════════════════════════════════════════════════════ */
-
-
-
-
-/* ═══════════════════════════════════════════════════════════
    SECTIONS
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .section { padding:90px 0; position:relative; z-index:1; }
 .divider { height:1px; background:linear-gradient(90deg,transparent,rgba(0,194,255,0.18),transparent); }
 
@@ -224,7 +217,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    SUMMARY
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .summary-layout { display:grid; grid-template-columns:1fr 1.6fr; gap:80px; align-items:start; }
 @media(max-width:900px){ .summary-layout { grid-template-columns:1fr; gap:40px; } }
 
@@ -237,7 +230,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    SKILLS
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .skills-grid {
   display:grid; grid-template-columns:repeat(3,1fr);
   gap:1px; background:var(--border);
@@ -260,7 +253,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    PROJECTS
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .proj-card {
   background:var(--bg2); border:1px solid var(--border);
   border-radius:var(--r-lg); overflow:hidden;
@@ -315,7 +308,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    EXPERIENCE
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .exp-card {
   background:var(--bg2); border:1px solid var(--border);
   border-radius:var(--r-lg); overflow:hidden;
@@ -334,7 +327,6 @@ nav {
   font-family:var(--mono); font-size:10px; color:var(--cyan); font-weight:500; letter-spacing:0.04em;
 }
 
-.exp-hdr-text {}
 .exp-role { font-family:var(--display); font-size:22px; font-weight:700; color:var(--t1); letter-spacing:-0.01em; margin-bottom:3px; }
 .exp-company { font-size:14px; color:var(--t2); margin-bottom:10px; }
 .exp-period {
@@ -355,7 +347,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    CERTIFICATIONS
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .certs-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
 @media(max-width:780px){ .certs-grid { grid-template-columns:1fr 1fr; } }
 @media(max-width:480px){ .certs-grid { grid-template-columns:1fr; } }
@@ -386,7 +378,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    WRITING — VERTICAL TIMELINE
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 
 /* Outer wrapper — holds the fade overlay */
 .wt-outer { position:relative; }
@@ -418,7 +410,7 @@ nav {
 /* The continuous vertical timeline line */
 .wt-vline {
   position:absolute;
-  left:88px;   /* 72px date-col + center of 32px node-col */
+  left:88px;
   top:12px; bottom:0;
   width:1px;
   background:linear-gradient(
@@ -545,7 +537,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    CAREER VISION
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .vision-card {
   background:var(--bg2); border:1px solid var(--border);
   border-radius:var(--r-lg); overflow:hidden;
@@ -573,7 +565,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    CONTACT
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .contact-section {
   padding:100px 0; text-align:center; position:relative; overflow:hidden;
 }
@@ -604,7 +596,7 @@ nav {
 
 /* ═══════════════════════════════════════════════════════════
    FOOTER
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 footer { border-top:1px solid var(--border); padding:2rem 0; }
 .footer-inner { max-width:1200px; margin:0 auto; padding:0 48px; display:flex; justify-content:space-between; align-items:center; }
 @media(max-width:600px){ .footer-inner { padding:0 20px; flex-direction:column; gap:8px; text-align:center; } }
@@ -614,7 +606,7 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
 
 /* ═══════════════════════════════════════════════════════════
    SCROLL REVEAL
-═══════════════════════════════════════════════════════════ */
+══════════════════════════════════════════════════════════ */
 .reveal { opacity:0; transform:translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
 .reveal.visible { opacity:1; transform:translateY(0); }
 .reveal.d1 { transition-delay:0.1s; }
@@ -642,12 +634,12 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
       <li><a href="#certs">Certs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="./assets/Tannu_Jha_DevOps.pdf"
+    <a href="./assets/Tannu_Jha_Cloud_DevOps_Resume.pdf"
    target="_blank"
    rel="noopener noreferrer"
    class="nav-cta">
-   Resume ↗
-</a>
+    Resume ↗
+    </a>
   </div>
 </nav>
 
@@ -674,11 +666,11 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
       </p>
 
       <div class="hero-actions ha">
-        <a href="./assets/Tannu_Jha_DevOps.pdf"
-   download="Tannu_Jha_Resume.pdf"
+        <a href="./assets/Tannu_Jha_Cloud_DevOps_Resume.pdf"
+   download="Tannu_Jha_Cloud_DevOps_Resume.pdf"
    class="btn btn-primary">
-   ↓ Download Resume
-</a>
+    ↓ Download Resume
+        </a>
         <a href="#projects" class="btn btn-ghost">View Projects</a>
         <a href="https://github.com/tannu610" target="_blank" class="btn btn-ghost">GitHub ↗</a>
         <a href="https://linkedin.com/in/tannu-jha" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
@@ -713,10 +705,10 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
       <div class="reveal d2">
         <div class="summary-text">
           <p>
-            <strong>Network Engineer with enterprise-grade production experience</strong> across MPLS, SD-WAN, and Internet services at Colt Technology Services, serving global enterprise customers. Two years of hands-on provisioning, troubleshooting, and incident management on Cisco and Juniper platforms.
+            <strong>Network Engineer with enterprise-grade production experience</strong> across MPLS, SD-WAN, and Internet services at Colt Technology Services, serving global enterprise customers.
           </p>
           <p>
-            Now transitioning that networking depth into cloud-native infrastructure — building on AWS with Terraform IaC, containerisation with Docker and Kubernetes, and CI/CD pipelines via GitHub Actions. Strong foundation in how networks actually work, which makes for better infrastructure engineers.
+            Now transitioning that networking depth into cloud-native infrastructure — building on AWS with Terraform IaC, containerisation with Docker and Kubernetes, and CI/CD pipelines via GitHub Actions.
           </p>
           <p>
             Targeting <strong>DevOps, Cloud Engineering, SRE, and Platform Engineering</strong> roles in India, Germany, and the UAE. Open to relocation.
@@ -808,7 +800,7 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
           <div class="proj-num">PROJECT_01</div>
           <div class="proj-title">Scalable Cloud Infrastructure with Terraform</div>
           <div class="proj-desc" style="margin-top:8px;">
-            A production-grade, VPC-isolated AWS infrastructure provisioned entirely through Terraform IaC. Features multi-AZ redundancy, auto scaling, encrypted RDS, and a full CI/CD pipeline via GitHub Actions. Built with security, observability, and operational excellence in mind.
+            A production-grade, VPC-isolated AWS infrastructure provisioned entirely through Terraform IaC. Features multi-AZ redundancy, auto scaling, encrypted RDS, and a full CI/CD pipeline via GitHub Actions.
           </div>
         </div>
         <div class="proj-btns">
@@ -820,7 +812,6 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
       <div class="arch-wrap">
         <div class="arch-ttl">Architecture / Infrastructure Flow</div>
         <div class="arch-diagram">
-          <!-- Row 1: CI/CD -->
           <div class="arch-row">
             <div class="arch-node g">GitHub Actions<small>CI/CD trigger</small></div>
             <span class="arch-arr">→</span>
@@ -828,7 +819,6 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
             <span class="arch-arr">→</span>
             <div class="arch-node c">AWS Cloud<small>Target env</small></div>
           </div>
-          <!-- Row 2: Network -->
           <div class="arch-row">
             <div class="arch-node">Internet</div>
             <span class="arch-arr">→</span>
@@ -841,7 +831,6 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
             <span class="arch-arr">→</span>
             <div class="arch-node c">RDS<small>KMS encrypted</small></div>
           </div>
-          <!-- Row 3: Observability -->
           <div class="arch-row">
             <div class="arch-node g">CloudWatch<small>Metrics + logs</small></div>
             <span class="arch-arr">→</span>
@@ -915,7 +904,6 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
     <div class="sec-tag reveal">Certifications</div>
     <h2 class="sec-h reveal d1" style="margin-bottom:2.5rem;">Credentials & learning.</h2>
     <div class="certs-grid">
-
       <div class="cert-card ip reveal d1">
         <div class="cert-platform">CNCF</div>
         <div class="cert-name">CKA</div>
@@ -939,7 +927,6 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
         <div class="cert-status done">✓ Completed</div>
         <div class="cert-bar-wrap"><div class="cert-bar" data-width="100"></div></div>
       </div>
-
     </div>
   </div>
 </section>
@@ -955,7 +942,6 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
       <div class="wt-scroll">
         <div class="wt-items" id="wt-items">
           <div class="wt-vline"></div>
-          <!-- rendered + sorted by JS — add articles to ARTICLES array in script -->
         </div>
       </div>
     </div>
@@ -981,7 +967,7 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
             <div class="role-chip">Platform Engineering</div>
           </div>
           <div class="vision-text">
-            Targeting <strong>DevOps, Cloud Engineering, Site Reliability Engineering (SRE), and Platform Engineering</strong> opportunities. Building on a foundation of enterprise networking to move into infrastructure automation and cloud-native operations.
+            Targeting <strong>DevOps, Cloud Engineering, Site Reliability Engineering (SRE), and Platform Engineering</strong> opportunities. Building on a foundation of enterprise networking to create resilient, secure, and scalable systems.
           </div>
         </div>
         <div class="vision-sep"></div>
@@ -1008,157 +994,80 @@ footer span { font-family:var(--mono); font-size:11px; color:var(--t3); }
 <div class="divider"></div>
 
 <!-- CONTACT -->
-<section class="contact-section" id="contact" style="position:relative;z-index:1;">
+<section class="section contact-section" id="contact">
   <div class="contact-bg-glow"></div>
-  <div class="wrap reveal">
-    <div class="contact-h">Let's build something<br>reliable.</div>
-    <div class="contact-sub">Open to conversations about DevOps, Cloud, and SRE roles. Response within 24 hours.</div>
-    <div class="contact-links">
-      <a class="contact-link primary" href="mailto:tannujha0610@email.com">✉ tannujha0610@email.com</a>
-      <a class="contact-link" href="https://linkedin.com/in/tannu-jha" target="_blank">LinkedIn ↗</a>
-      <a class="contact-link" href="https://github.com/tannu610" target="_blank">GitHub ↗</a>
-      <a class="contact-link" href="#">↓ Resume PDF</a>
+  <div class="wrap">
+    <div class="sec-tag reveal">Contact</div>
+    <h2 class="contact-h reveal d1">Let’s build the next reliable platform.</h2>
+    <p class="contact-sub reveal d2">Open for cloud, DevOps, and infrastructure engineering opportunities across product teams and platform organisations.</p>
+    <div class="contact-links reveal d3">
+      <a href="https://github.com/tannu610" target="_blank" class="contact-link">GitHub</a>
+      <a href="https://linkedin.com/in/tannu-jha" target="_blank" class="contact-link">LinkedIn</a>
+      <a href="./assets/Tannu_Jha_Cloud_DevOps_Resume.pdf" target="_blank" class="contact-link primary">Resume</a>
     </div>
-    <div class="contact-info">
-      <span>New Delhi, India</span>
+    <div class="contact-info reveal d3">
+      <a href="mailto:your.email@example.com">hello@tannujha.dev</a>
       &nbsp;·&nbsp;
-      <span>Open to Relocation</span>
-      &nbsp;·&nbsp;
-      <span>Cloud • DevOps • SRE</span>
+      <a href="https://github.com/tannu610" target="_blank">github.com/tannu610</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-inner">
-    <span>© 2025 Tannu Jha · Built from scratch</span>
-    <div class="uptime"><div class="up-dot"></div><span>All systems operational</span></div>
+    <span>© 2025 Tannu Jha</span>
+    <span class="uptime"><span class="up-dot"></span>Infrastructure-focused portfolio</span>
   </div>
 </footer>
 
 <script>
-/* ─── Scroll Reveal ─── */
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-/* ─── Cert bar animation ─── */
-const certObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const bar = e.target.querySelector('.cert-bar');
-      if (bar) bar.style.width = bar.dataset.width + '%';
-      certObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.3 });
-document.querySelectorAll('.cert-card').forEach(el => certObs.observe(el));
-
-/* ─── Nav opacity on scroll ─── */
-const nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-  nav.style.background = window.scrollY > 60
-    ? 'rgba(5,8,22,0.95)'
-    : 'rgba(5,8,22,0.82)';
-}, { passive: true });
-
-/* ─── Writing Timeline ─── */
-/* ✏️  TO ADD A NEW ARTICLE: push an object into ARTICLES below.
-   Sorting is automatic — newest always appears first.
-   Set type:'upcoming' for placeholder entries.          */
-
-const ARTICLES = [
-  {
-    year: 2026, month: 5, monthStr: 'May',
-    title: 'I Stopped Deploying Resources and Started Designing Systems',
-    excerpt: 'The shift from spinning up individual cloud resources to thinking in systems — why infrastructure design requires a different mindset than infrastructure deployment.',
-    url: 'https://www.linkedin.com/pulse/i-stopped-deploying-resources-started-designing-systems-tannu-jha-jt1bc/',
-    platform: 'LinkedIn Pulse', type: 'published'
-  },
-  {
-    year: 2026, month: 4, monthStr: 'Apr',
-    title: 'Choosing the Right Database: It Depends on More Than You Think',
-    excerpt: 'Database selection goes beyond SQL vs NoSQL — exploring consistency models, access patterns, and the trade-offs that actually matter when designing systems.',
-    url: 'https://www.linkedin.com/pulse/choosing-right-database-depends-more-than-you-think-tannu-jha-2j2cc/',
-    platform: 'LinkedIn Pulse', type: 'published'
-  },
-  {
-    year: 2026, month: 1, monthStr: 'Jan',
-    title: 'What Broke When I Ran IBM MQ Locally (And What I Learned Fixing It)',
-    excerpt: 'A hands-on account of debugging IBM MQ on a local environment — from queue manager config errors to permission issues, and the lessons that followed.',
-    url: 'https://www.linkedin.com/pulse/what-broke-when-i-ran-ibm-mq-locally-learned-fixing-tannu-jha-qdyzc/',
-    platform: 'LinkedIn Pulse', type: 'published'
-  },
-  {
-    year: 2025, month: 11, monthStr: 'Nov',
-    title: 'The Cloudflare Outage: What Actually Happened',
-    excerpt: 'Tracing the root cause through BGP routing mishaps and cascading failures — and what it reveals about the fragility of internet infrastructure at scale.',
-    url: 'https://www.linkedin.com/pulse/cloudflare-outage-what-actually-happened-tannu-jha-lhbuc/',
-    platform: 'LinkedIn Pulse', type: 'published'
-  }
+const articles = [
+  { date: 'JAN 2025', platform: 'DEVOPS / AWS', title: 'Designing a multi-AZ AWS architecture for resilient workloads', excerpt: 'A walkthrough of VPC structure, traffic flow, and high-availability patterns for production systems.', href: '#', latest: true },
+  { date: 'NOV 2024', platform: 'TERRAFORM', title: 'Infrastructure as Code: structuring reusable Terraform modules', excerpt: 'How to organise modules, variables, and state management for scalable cloud automation.', href: '#', latest: false },
+  { date: 'SEP 2024', platform: 'KUBERNETES', title: 'Kubernetes basics for networking and platform engineers', excerpt: 'A practical beginner’s guide to pods, services, deployments, and cluster networking mental models.', href: '#', latest: false },
+  { date: 'AUG 2024', platform: 'CLOUD', title: 'From enterprise networking to cloud-native operations', excerpt: 'Reflecting on how routing, troubleshooting, and service reliability translate into DevOps practice.', href: '#', latest: false }
 ];
 
-(function renderWriting() {
-  const container = document.getElementById('wt-items');
-  const hint      = document.getElementById('wt-hint');
-  if (!container) return;
+const items = document.getElementById('wt-items');
+const hint = document.getElementById('wt-hint');
+const sorted = [...articles].sort((a, b) => new Date(b.raw || '2025-01-01') - new Date(a.raw || '2025-01-01'));
 
-  /* Sort: upcoming always first, then published newest → oldest */
-  const sorted = [...ARTICLES].sort((a, b) => {
-    if (a.type === 'upcoming' && b.type !== 'upcoming') return -1;
-    if (b.type === 'upcoming' && a.type !== 'upcoming') return 1;
-    return b.year !== a.year ? b.year - a.year : b.month - a.month;
-  });
-
-  /* Auto-tag the first published article as 'latest' */
-  const latestIdx = sorted.findIndex(a => a.type === 'published');
-
-  sorted.forEach((art, i) => {
-    const isUpcoming = art.type === 'upcoming';
-    const isLatest   = i === latestIdx;
-
-    const item = document.createElement('div');
-    item.className = 'wt-item' + (isUpcoming ? ' wt-upcoming' : '');
-
-    const badgeHtml = isUpcoming
-      ? '<span class="wt-badge upcoming">Upcoming</span>'
-      : isLatest
-        ? '<span class="wt-badge latest">Latest</span>'
-        : '';
-
-    const platformHtml = art.platform
-      ? `<span class="wt-platform">${art.platform}</span>` : '';
-
-    const actionHtml = isUpcoming
-      ? '<span class="wt-coming">— Article in progress</span>'
-      : `<a class="wt-link" href="${art.url}" target="_blank" rel="noopener">Read Article ↗</a>`;
-
-    item.innerHTML = `
-      <div class="wt-date-col">
-        <span class="wt-date">${art.monthStr}<br>${art.year}</span>
+sorted.forEach((article, idx) => {
+  const row = document.createElement('article');
+  row.className = `wt-item ${article.latest ? 'wt-latest' : ''}`;
+  row.innerHTML = `
+    <div class="wt-date-col"><span class="wt-date">${article.date}</span></div>
+    <div class="wt-node-col"><span class="wt-node ${article.latest ? 'n-latest' : ''}"></span></div>
+    <div class="wt-content">
+      <div class="wt-meta">
+        <span class="wt-badge ${article.latest ? 'latest' : 'upcoming'}">${article.latest ? 'Latest' : 'Article'}</span>
+        <span class="wt-platform">${article.platform}</span>
       </div>
-      <div class="wt-node-col">
-        <div class="wt-node ${isLatest ? 'n-latest' : isUpcoming ? 'n-upcoming' : ''}"></div>
-      </div>
-      <div class="wt-content">
-        <div class="wt-meta">${badgeHtml}${platformHtml}</div>
-        <div class="wt-title">${art.title}</div>
-        <div class="wt-excerpt">${art.excerpt}</div>
-        ${actionHtml}
-      </div>`;
+      <div class="wt-title">${article.title}</div>
+      <div class="wt-excerpt">${article.excerpt}</div>
+      <a class="wt-link" href="${article.href}">Read article →</a>
+    </div>
+  `;
+  items.appendChild(row);
+});
 
-    container.appendChild(item);
+hint.textContent = sorted.length > 2 ? 'Scroll to explore more notes' : 'Latest notes';
+
+const revealItems = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
   });
+}, { threshold: 0.15 });
+revealItems.forEach(item => observer.observe(item));
 
-  /* Show scroll hint only when there are more than 3 articles */
-  if (hint && sorted.length > 3) {
-    hint.textContent = sorted.length + ' articles — scroll to explore ↓';
-  }
-})();
-
+const bars = document.querySelectorAll('.cert-bar');
+bars.forEach((bar) => {
+  const width = bar.dataset.width || '0';
+  requestAnimationFrame(() => { bar.style.width = width + '%'; });
+});
 </script>
 </body>
 </html>
